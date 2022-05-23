@@ -1,39 +1,9 @@
 import React from 'react'
 import svgLocation from '../../assets/img/location1.svg'
 import svgClock from '../../assets/img/clock1.svg'
-// import styled from 'styled-components';
 import './style.scss'
+import { Link } from 'react-router-dom'
 
-
-
-// const EventItem=({title,poster,description,date,location})=>  (
-//      <Wrapper >
-//        <Position>
-//        <PostDate>
-//          <Date>26</Date>
-//          <Month>june</Month>
-//        </PostDate>
-//      <Image alt={`${title} Show Poster`} src={`${poster}`} >
-//        </Image>
-//        </Position>
-//      <Container>
-//       <Title>{title}</Title>
-//       <Description>{description}</Description>
-//       <UlLiBlock>
-//       <Ul>
-//         <Li>
-//            <EventSvg src={svgClock} alt=""/>
-//            ({date})</Li>
-//         <Li>
-//         <EventSvg src={svgLocation} alt=""/>
-//           {location}</Li>
-//       </Ul>
-//       </UlLiBlock>
-//        <Button>Tickets & details</Button>
-//     </Container>
-//   </Wrapper>
-//   )
-// export default EventItem
 const EventItem=({title,poster,description,date,location})=>  (
   <div className='Wrapper'  >
     <div className='Position'>
@@ -57,7 +27,9 @@ const EventItem=({title,poster,description,date,location})=>  (
        {location}</li>
    </ul>
    </div>
-    <button className='Button'>Tickets & details</button>
+   <nav>
+   <button className='Button'>Tickets & details</button>
+   </nav>
  </div>
 </div>
 )

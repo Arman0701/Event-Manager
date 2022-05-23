@@ -1,3 +1,6 @@
+.flex{
+    display: flex;
+}
 .column{
     flex: 0 0 25%;
     max-width: 25%;
@@ -41,9 +44,12 @@
                 line-height: normal;
                 display: inline-block;
             }
+         
         }
-
+ 
     }
+  
+   
 }
 .EventItemsStyled{
    display: flex;
@@ -58,4 +64,13 @@
     flex-direction: column
   }
  
+}
+
+.eventName{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+   /* align-items: stretch; */
+   flex-direction: row;
 }
