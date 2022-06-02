@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -6,12 +11,7 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  background: linear-gradient(
-    to top,
-    transparent 0%,
-    rgba(84, 138, 121, 0.3) 40%
-  );
-  transition:  0.3s ease;
+  transition: 0.3s ease;
   &.scrolled {
     background: rgb(51 51 51);
   }
@@ -29,43 +29,17 @@
       display: flex;
       align-items: center;
       cursor: pointer;
-      img {
-        height: auto;
-        max-width: 100%;
-      }
     }
+
     .navigation {
       display: flex;
       align-items: center;
       margin-left: 140px;
 
-      .span1 {
-        background: -webkit-gradient(
-          linear,
-          left top,
-          right bottom,
-          from(rgb(255 62 0)),
-          to(rgb(255 190 48))
-        );
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      span {
-        color: rgb(255 255 255);
-        cursor: pointer;
-        font-weight: 700;
-        padding: 6px 13px;
-        margin-left: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 3px;
-        font-size: 18px;
-        // height: 23px;
+      .link {
+        text-decoration: none;
 
-        &:hover {
-          transition: all 0.3s ease;
+        .span1 {
           background: -webkit-gradient(
             linear,
             left top,
@@ -73,6 +47,34 @@
             from(rgb(255 62 0)),
             to(rgb(255 190 48))
           );
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        span {
+          color: rgb(255 255 255);
+          cursor: pointer;
+          font-weight: 700;
+          padding: 6px 13px;
+          margin-left: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 3px;
+          font-size: 18px;
+          transition: all 0.3s ease;
+          // height: 23px;
+
+          &:hover {
+            transition: all 0.3s ease;
+            background: -webkit-gradient(
+              linear,
+              left top,
+              right bottom,
+              from(rgb(255 62 0)),
+              to(rgb(255 190 48))
+            );
+          }
         }
       }
     }
@@ -87,6 +89,7 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        text-decoration: none;
         width: 35px;
         height: 35px;
         margin-left: 15px;
