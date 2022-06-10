@@ -1,0 +1,101 @@
+.profileWrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+}
+.leftSide, .rightSide {
+	color: white;
+	background: linear-gradient(143deg, rgba(255,85,0,1) 48%, rgba(253,216,29,1) 100%);
+	width: 30%;
+	padding: 0 15px;
+}
+.userImageWrapper {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid white;
+	overflow: hidden;
+	padding: 10px;
+	margin: 20px auto;
+}
+.optionalLayer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.3);
+	color: black;
+	cursor: pointer;
+	border-radius: 50%;
+}
+.userImageWrapper:hover .optionalLayer {
+	display: flex;
+}
+.userImageWrapper img {
+	width: 100%;
+	height: 100%;
+}
+.aboutUser {
+	padding: 10px 15px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	backdrop-filter: blur(5px);
+}
+.aboutField  span {
+	font-size: 20px;
+	margin: 5px 0;
+}
+.aboutField p {
+	padding: 3px 8px;
+	border-radius: 4px;
+	background: rgba(255,255,255,0.4);
+	margin-bottom: 5px;
+}
+.aboutField input {
+	width: 100%;
+	background: rgba(255,255,255,0.15);
+	border: none;
+	outline: none;
+	padding: 4px 8px;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	color: white;
+	font-size: 17px;
+}
+.aboutField input:focus {
+	background: rgba(255,255,255,0.4);
+
+}
+.editProfileBtn {
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 7px;
+	padding: 10px 15px;
+	background: rgba(255,255,255,0.4);
+	border-radius: 20px;
+	width: fit-content;
+	cursor: pointer;
+}
+.rightSide {
+	width: 70%;
+	border-left: 2px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.rightSideContent {
+	height: 94%;
+	padding: 10px 25px;
+	background: rgba(255,255,255,0.4);
+	backdrop-filter: blur(5px);
+	border-radius: 8px;
+}
+.rightSideContent p {
+	margin: 10px 0;
+	font-size: 19px;
+}
