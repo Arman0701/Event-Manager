@@ -1,0 +1,48 @@
+article{
+    display: flex;
+    background: #d1d1d1;
+    flex-direction: row;
+    margin: 4px;
+    img{
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+    }
+    .comment{
+        display: flex;
+        flex-direction: column;
+    }
+}
+section{
+    display: flex;
+    flex-direction: column;
+    form{
+        display: flex;
+        flex-direction: column;
+        
+        
+        .inputComment{
+            height: 200px;
+            margin-bottom: 2px;
+        }
+        .flex-centre{
+            display: flex;
+           justify-content: center;
+            button{
+                border-radius: 50px;
+                border: #fff;
+                width: 144px;
+                z-index: 1;
+                box-shadow: none;
+                padding: 15px 35px;
+                margin: 4px;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #ffffff !important;
+                background: linear-gradient(to bottom right, #ffbe30 , #ff3e00)!important;            
+                cursor: pointer;
+            }
+        }
+       
+    }
+}

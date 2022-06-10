@@ -1,0 +1,11 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.header{
+    border-radius: 3px;
+    padding: 15px 30px;
+    color: rgba(255, 255, 255, 0.8);
+    background: -webkit-gradient(linear, left top, right bottom, from(#ff3e00), to(#ffbe30));
+}
