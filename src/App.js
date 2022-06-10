@@ -4,7 +4,7 @@ import {BrowserRouter , Route , Routes} from "react-router-dom";
 import Loader from './assets/img/preloader.gif'
 
 const Contact=lazy(()=>import('./components/ContactUs'))
-const EventDetails=lazy(()=>import('./components/EventDetails'))
+const Error404=lazy(()=>import('./components/Error404'))
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
           <Route path="/login" element={<Login />}/> {/* Login page  */}
           <Route path="/contacts" element={<Contact />}/>{/* About us page  */}
           <Route path="/profile" element={<Profile />} />{/* For profile page  */}
-          <Route path="/event/" element={<Event  />} /> {/* for each event  */}
-          <Route path="/error" element={<Error404  />} /> {/* for each event  */}
+          <Route path="/event/" element={<Event  />} /> {/* for each event  */} 
+          <Route path="*" element={<Error404  />} /> {/* for each event  */}
         </Routes>
         </Suspense>
       </BrowserRouter>

@@ -1,3 +1,12 @@
+.errSection{
+    background-color: #f7f7f7;
+    padding: 100px 0px;
+    word-spacing: 2px;
+    letter-spacing: .6px;
+    color: #878787;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
 .errorContainer{
     background-color: #f7f7f7;
     margin: 0 auto;
@@ -9,16 +18,45 @@
         margin-right: -15px;
         margin-left: -15px;
         .colErr{
-            
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
              width: 360px;
              height: 360px;
              font-size: 200px;
              text-align: center;
              line-height: 360px;
              margin: 0 auto 30px;
-             border-radius: 100%;
+             border-radius: 50%;
              color: #878787;
              background-color: #f0f0f0;
+             .imgErr{
+
+                margin: 80px;
+                height: 200px;
+             }
+            
         }
+        .errContent{
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            .h2Err{
+                font-size: 90px;
+                font-weight: 900;
+                color: #333333;
+                text-transform: capitalize;
+            }
+            .h3Err{
+                font-weight: 700;
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+            .pErr{
+                font-weight: 700;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                color: #333333;
+            }
+         }
     }
 }
