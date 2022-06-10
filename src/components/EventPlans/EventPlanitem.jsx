@@ -1,6 +1,8 @@
 import React from 'react'
 
+
 export default function EventPlanitem({amount,title,person,svg,outfit,minute,image,release,album,props}) {
+   
   return (
   <>
                     <div className='pricing-header'>

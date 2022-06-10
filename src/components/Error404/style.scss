@@ -1,0 +1,24 @@
+.errorContainer{
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    max-width: 1200px;
+    .errorRow{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        .colErr{
+            
+             width: 360px;
+             height: 360px;
+             font-size: 200px;
+             text-align: center;
+             line-height: 360px;
+             margin: 0 auto 30px;
+             border-radius: 100%;
+             color: #878787;
+             background-color: #f0f0f0;
+        }
+    }
+}

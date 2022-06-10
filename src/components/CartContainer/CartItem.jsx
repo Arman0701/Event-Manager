@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import {  useDispatch } from "react-redux";
 import { decrease, increase, remove } from '../../store/cart/cartSlice'
 // import { decrease, getCartTotal, increase, remove } from "./redux/actions";
 
@@ -21,15 +21,12 @@ const CartItem = ({ id,title, price, amount }) => {
           <button
             style={{ cursor: "pointer" }}
             onClick={() => dispatch(increase(id))}
-            icon="chevron-up"
-          />
+          >+</button>
           <p style={{ marginTop: "10px" }}>{amount}</p>
           <button
-            
-            icon="chevron-down"
             style={{ cursor: "pointer" }}
             onClick={() => dispatch(decrease(id))}
-          />
+          >-</button>
         </div>
       </div>
     </div>
