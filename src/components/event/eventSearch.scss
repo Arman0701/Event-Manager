@@ -1,0 +1,122 @@
+.eventSearch {
+  width: 100%;
+
+  .backgroundSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 200px;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgb(255 62 0)),
+      to(rgb(255 190 48))
+    );
+    background: -webkit-linear-gradient(
+      top left,
+      rgb(255 62 0),
+      rgb(255 190 48)
+    );
+    background: -o-linear-gradient(top left, #ff3e00, #ffbe30);
+    background: linear-gradient(
+      to bottom right,
+      rgb(255 62 0),
+      rgb(255 190 48)
+    );
+    .section {
+      display: flex;
+      width: 100%;
+      height: 100px;
+
+      .divSecTitle {
+        margin-left: 200px;
+        margin-top: 15px;
+        span {
+          letter-spacing: 1.5px;
+          font-size: 14px;
+          color: white;
+        }
+
+        h2 {
+          font-size: 47px;
+          color: white;
+          margin-top: 5px;
+
+          strong {
+            font-weight: 900;
+          }
+        }
+      }
+
+      .col {
+        display: flex;
+        width: 50%;
+        height: 100px;
+        margin-left: 125px;
+
+        .li {
+          margin-top: 15px;
+          margin-left: 5px;
+
+          .title {
+            letter-spacing: 1.5px;
+            font-size: 14px;
+            color: white;
+          }
+          .for-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            width: 250px;
+            background-color: rgb(255 255 255);
+            height: 56%;
+            border-radius: 3px;
+
+            input {
+              border: none;
+              outline: none;
+            }
+          }
+
+          .for-select {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            width: 250px;
+            background-color: rgb(255 255 255);
+            height: 56%;
+            border-radius: 3px;
+
+            select {
+              border: none;
+              outline: none;
+              width: 100%;
+              font-weight: 600;
+              padding: 0 20px;
+            }
+          }
+
+          .for-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 250px;
+            height: 56%;
+            margin-top: 37.2px;
+            background-color: rgb(51 51 51);
+            color: white;
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 3px;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
