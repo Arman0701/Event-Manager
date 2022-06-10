@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/">
             {/* <Route path="/login" element={<Login/>} /> */}
-
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="events" element={<Events />} />
@@ -26,11 +25,8 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-  
     </div>
   );
 }
 
 export default App;
-
-
