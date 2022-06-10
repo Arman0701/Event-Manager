@@ -3,7 +3,7 @@ import './App.css';
 import {BrowserRouter , Route , Routes} from "react-router-dom";
 import Loader from './assets/img/preloader.gif'
 
-const ContactUs=lazy(()=>import('./components/ContactUs'))
+const Contact=lazy(()=>import('./components/ContactUs'))
 const EventDetails=lazy(()=>import('./components/EventDetails'))
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           <Route path="/clubsAndPubs" element={<ClubsAndPubs />}/>{/*  For clubs and pubs events  */}
           <Route path="/register" element={<Register />}/> {/* Register page  */}
           <Route path="/login" element={<Login />}/> {/* Login page  */}
-          <Route path="/contacts" element={<ContactUs />}/>{/* About us page  */}
+          <Route path="/contacts" element={<Contact />}/>{/* About us page  */}
           <Route path="/profile" element={<Profile />} />{/* For profile page  */}
           <Route path="/event/" element={<Event  />} /> {/* for each event  */}
           <Route path="/error" element={<Error404  />} /> {/* for each event  */}
