@@ -8,9 +8,11 @@ import imagesquare4 from "../../assets/imagesquare4.png";
 import imagesquare5 from "../../assets/imagesquare5.png";
 import imagesquare6 from "../../assets/imagesquare6.png";
 
-export default function Footer() {
+export default function Footer({marginTop}) {
   return (
-    <div className={styles.footerWrapper}>
+    <div className={styles.footerWrapper} style={marginTop?{
+      marginTop:marginTop
+    }:null}>
       <footer className={styles.layer1}>
         <div className={styles.infoDivs}>
           <div className={styles.logo}>
