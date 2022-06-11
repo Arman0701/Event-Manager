@@ -1,10 +1,11 @@
 .footerWrapper {
-	width: 100vw;
+	width: calc(100vw - 17px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
     background-color: #333333;
+    margin-top: 165px;
 }
 ::selection {
   color: #ffbe30;
@@ -100,7 +101,7 @@ h3 {
 }
 .layer2 {
 	font-size: 17px;
-  width: 100vw;
+    width: calc(100vw - 17px);
 	padding: 25px 0;
 	display: flex;
 	align-items: center;
