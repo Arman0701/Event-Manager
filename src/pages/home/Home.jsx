@@ -12,6 +12,7 @@ import Cover from "../../components/Cover/Cover";
 import bg1 from "../../assets/img/slider-bg1.jpg";
 import bg2 from "../../assets/img/slider-bg2.jpg";
 import bg3 from "../../assets/img/slider-bg3.jpg";
+import Footer from "../../components/Footer/Footer"
 
 const WRAPPER_STYLES = {
 	width: '75vw',
@@ -46,6 +47,7 @@ const Home = () => {
 				<Content />
 			</div>
 		</SliderSecond>
+		<Footer />
     </div>
   );
 };
