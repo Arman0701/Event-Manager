@@ -1,3 +1,4 @@
+import React from "react";
 import "./event.scss";
 import { Link } from "react-router-dom";
 import EventSearch from "./EventSearch";

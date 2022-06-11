@@ -1,3 +1,4 @@
+import React from "react";
 import "./rightbar.scss";
 import { AiOutlineArrowUp } from "react-icons/ai";
 const Rightbar = () => {

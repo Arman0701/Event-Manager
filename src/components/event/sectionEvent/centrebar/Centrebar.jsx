@@ -1,3 +1,4 @@
+import React from "react";
 import "./centrebar.scss";
 import { FaMicrophone, FaThList, FaTicketAlt } from "react-icons/fa";
 import { MdTableChart } from "react-icons/md";

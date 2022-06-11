@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./pages/about/About";
 import Blogs from "./pages/blogs/Blogs";

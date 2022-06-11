@@ -1,3 +1,4 @@
+import React from "react";
 import "./leftbar.scss";
 import { FaBookmark } from "react-icons/fa";
 

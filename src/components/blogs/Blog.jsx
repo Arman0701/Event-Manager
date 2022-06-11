@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import "./blog.scss";
 import Leftbar from "./sectionBlogs/leftbar/Leftbar";
