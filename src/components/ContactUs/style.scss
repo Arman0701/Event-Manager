@@ -5,8 +5,9 @@
     align-items: center;
     margin: 0 auto;
     max-width: 1200px;
+    margin-top: 180px;
     .cntTitle{
-        margin-right: 700px;
+       
         .cntSmall{
             margin-bottom: 15px;
             letter-spacing: 5px;
@@ -111,4 +112,7 @@ input:focus {
 textarea:focus {
     outline: none;
       border: 1px solid #ffbe30;
+}
+form{
+    margin-left: 100px;
 }
