@@ -13,7 +13,7 @@
   z-index: 999;
   transition: 0.3s ease;
   &.scrolled {
-    background: rgb(51 51 51);
+    background: #333333;
   }
 
   .container {
@@ -44,15 +44,15 @@
             linear,
             left top,
             right bottom,
-            from(rgb(255 62 0)),
-            to(rgb(255 190 48))
+            from(#ff3e00),
+            to(#ffbe30)
           );
           display: flex;
           align-items: center;
           justify-content: center;
         }
         span {
-          color: rgb(255 255 255);
+          color: #ffffff;
           cursor: pointer;
           font-weight: 700;
           padding: 6px 13px;
@@ -71,8 +71,8 @@
               linear,
               left top,
               right bottom,
-              from(rgb(255 62 0)),
-              to(rgb(255 190 48))
+              from(#ff3e00),
+              to(#ffbe30)
             );
           }
         }
@@ -94,11 +94,11 @@
         height: 35px;
         margin-left: 15px;
         border-radius: 50px;
-        border: 3px solid rgb(255 190 48);
-        color: rgb(255 255 255);
+        border: 3px solid #ffbe30;
+        color: #ffffff;
 
         &:hover {
-          background-color: rgb(255 190 48);
+          background-color: #ffbe30;
           transition: all 0.6s ease;
         }
       }

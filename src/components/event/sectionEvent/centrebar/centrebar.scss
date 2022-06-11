@@ -11,7 +11,7 @@
     .centreSelect {
       span {
         font-weight: 700;
-        color: rgb(135 135 135);
+        color: #878787;
         font-size: 17px;
         margin: 0 15px;
         margin-top: -4px;
@@ -28,7 +28,7 @@
       }
       select {
         border: none;
-        background: rgb(247, 247, 247);
+        background: #f7f7f7;
         outline: none;
         margin-left: -13px;
       }
@@ -58,7 +58,7 @@
     margin: 20px 0;
 
     &:hover {
-      outline: 1px solid rgb(255 190 48);
+      outline: 1px solid #ffbe30;
     }
 
     .centreEv {
@@ -81,19 +81,19 @@
             linear,
             left top,
             right bottom,
-            from(rgb(255 62 0)),
-            to(rgb(255 190 48))
+            from(#ff3e00),
+            to(#ffbe30)
           );
           background: -webkit-linear-gradient(
             top left,
-            rgb(255 62 0),
-            rgb(255 190 48)
+            #ff3e00,
+            #ffbe30
           );
           // background: -o-linear-gradient(top left, #ff3e00, #ffbe30);
           background: linear-gradient(
             to bottom right,
-            rgb(255 62 0),
-            rgb(255 190 48)
+            #ff3e00,
+            #ffbe30
           );
 
           .numMonth {
@@ -104,14 +104,14 @@
 
           .month {
             font-size: 20px;
-            color: rgb(255 255 255);
+            color: #ffffff;
           }
         }
         hr {
           position: absolute;
           width: 7px;
           height: 54px;
-          background-color: rgb(255, 190, 48);
+          background-color: #ffbe30;
           right: -4px;
           top: 17px;
           border: none;
@@ -121,7 +121,7 @@
         margin: 0 30px;
 
         .price{
-          color: rgb(255 190 48);
+          color: #ffbe30;
         }
 
         .desc{
@@ -153,19 +153,19 @@
                 linear,
                 left top,
                 right bottom,
-                from(rgb(255 62 0)),
-                to(rgb(255 190 48))
+                from(#ff3e00),
+                to(#ffbe30)
               );
               background: -webkit-linear-gradient(
                 top left,
-                rgb(255 62 0),
-                rgb(255 190 48)
+                #ff3e00,
+                #ffbe30
               );
               // background: -o-linear-gradient(top left, #ff3e00, #ffbe30);
               background: linear-gradient(
                 to bottom right,
-                rgb(255 62 0),
-                rgb(255 190 48)
+                #ff3e00,
+                #ffbe30
               );
               color: white;
               transition: all 1s ease-in;
@@ -186,14 +186,14 @@
               height: 40px;
               line-height: 40px;
               text-align: center;
-              color: rgb(255 255 255);
+              color: #ffffff;
               border-radius: 100%;
-              background-color: rgb(255 190 48);
+              background-color: #ffbe30;
             }
 
             small {
               margin-left: 10px;
-              color: rgb(168, 165, 165);
+              color: #a8a5a5;
               font-size: 15px;
               font-weight: 700;
             }
