@@ -1,5 +1,7 @@
 import "./leftbar.scss";
 import { FaCalendarWeek } from "react-icons/fa";
+import React from "react";
+
 const Leftbar = () => {
   return (
     <div className="leftBar">

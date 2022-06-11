@@ -2,7 +2,7 @@ import React from 'react'
 import Event from '../../components/event/Event';
 import Navbarelem from './../../components/navbarElements/Navbarelem';
 import "./events.scss"
-import useFetch from './../../hooks/useFetch';
+// import useFetch from './../../hooks/useFetch';
 
 const Events = () => {
 

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./blog.scss";
 import Leftbar from "./sectionBlogs/leftbar/Leftbar";
 import Rightbar from "./sectionBlogs/rightbar/Rightbar";
+import React from "react";
 
 const Blogs = () => {
   return (

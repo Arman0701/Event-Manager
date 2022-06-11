@@ -1,6 +1,7 @@
 import "./centrebar.scss";
 import { FaMicrophone, FaThList, FaTicketAlt } from "react-icons/fa";
 import { MdTableChart } from "react-icons/md";
+import React from "react";
 
 const Centrebar = () => {
   return (

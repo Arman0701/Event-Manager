@@ -1,0 +1,27 @@
+.timerWrapper {
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 18px 0;
+	background: rgba(255, 255, 255, 0.1);
+}
+.timerCell {
+	font-size: 22px;
+	color: white;
+	font-size: 700;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 85px;
+	height: 85px;
+	border-radius: 8px;
+	border: 3px solid white;
+	margin: 0 8px;
+}

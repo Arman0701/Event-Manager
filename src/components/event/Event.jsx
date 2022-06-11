@@ -2,7 +2,7 @@ import "./event.scss";
 import { Link } from "react-router-dom";
 import EventSearch from "./EventSearch";
 import Section from "./sectionEvent/Section";
-
+import React from "react";
 
 const Event = () => {
 

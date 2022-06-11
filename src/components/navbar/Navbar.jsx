@@ -6,7 +6,7 @@ import logo from "./assets/logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  let [isScrolled, setIsScrolled] = useState(false);
    
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);

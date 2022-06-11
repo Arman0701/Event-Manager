@@ -1,0 +1,16 @@
+.carouselTitle {
+	margin-top: 85px;
+	font-size: 18px;
+	margin-bottom: 15px;
+	letter-spacing: 5px;
+	color: #878787;
+}
+.corouselSubtitle {
+	color: #333;
+	font-size: 48px;
+}
+.corouselSubtitle span {
+	margin-left: 2%;
+	font-weight: 700;
+	margin-bottom: 50px;
+}

@@ -6,8 +6,10 @@ import Events from "./pages/events/Events";
 import Gallery from "./pages/gallery/Gallery";
 import Home from "./pages/home/Home";
 import Speaker from "./pages/speaker/Speaker";
-function App() {
+import "./App.css";
+import React from "react";
 
+function App() {
 
   return (
     <div className="App">
