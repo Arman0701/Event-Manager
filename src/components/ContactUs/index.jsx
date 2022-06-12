@@ -18,7 +18,7 @@ export default function ContactUs() {
     return (
       <>
         <div className="text-2xl">Thank you!</div>
-        <div className="text-md"> We'll be in touch soon.</div>
+        <div className="text-md"> We&apos;ll be in touch soon.</div>
       </>
     );
   }
