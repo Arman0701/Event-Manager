@@ -1,0 +1,85 @@
+.divEvent{
+    overflow: hidden;
+    margin-top: 140px;
+}
+.flex{
+    display: flex;
+    padding: 30px;
+}
+.column{
+    flex: 0 0 25%;
+    max-width: 25%;
+    .section{
+        position: relative;
+        text-align: left!important;
+        
+        .LineStyle{
+            z-index: 1;
+            top: -30px;
+            left: -30px;
+            width: 70px;
+            height: 3px;
+            position: absolute;
+            background-color: #ffbe30;
+            background: #ffbe30!important;
+            line-height: normal;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        .sub-title{
+            margin-bottom: 15px;
+           letter-spacing: 5px;
+           color: #878787;
+           font-size: 18px;
+            text-transform: uppercase;
+        }
+        .big-title{
+            margin: 0px;
+            padding: 0px;
+            font-size: 48px;
+            font-weight: 400;
+            color: #333333;
+            text-transform: capitalize;
+            font-family: "Roboto", sans-serif;
+            line-height: 1.2;
+            word-spacing: 2px;
+            letter-spacing: .6px;
+            .EvStrong{
+                font-weight: 900;
+                line-height: normal;
+                display: inline-block;
+            }
+         
+        }
+ 
+    }
+  
+   
+}
+.EventItemsStyled{
+   display: flex;
+   flex-wrap: wrap;
+   margin-right: -15px;
+   margin-left: -15px;
+   padding:30px;
+   gap:30px;
+   justify-content: center;
+   align-items: center;
+   @media(max-width: 992px) {
+    flex-direction: column
+  }
+ 
+}
+
+.eventName{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+   /* align-items: stretch; */
+   flex-direction: row;
+}
+.pagination-bar{
+    display: flex;
+    justify-content: center;
+}
