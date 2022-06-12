@@ -1,6 +1,5 @@
 import React from "react";
 import "./Slider.css";
-import React from 'react'
 import { useState, useEffect, useCallback } from "react";
 import BtnSlider from "./BtnSlider";
 
