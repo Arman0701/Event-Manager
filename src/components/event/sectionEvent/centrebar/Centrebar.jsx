@@ -80,7 +80,7 @@ const Centrebar = () => {
                       <h3>{data.seats} Seats</h3>
                     </div>
                     <nav>
-                    <Link className="btnSpeaker">TICKETS & DETAILS</Link>
+                    <Link to='eventDetails' className="btnSpeaker">TICKETS & DETAILS</Link>
                     </nav>
                    
                   </div>
