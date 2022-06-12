@@ -16,7 +16,7 @@ export default function Error404() {
                <h3 className='h3Err'>error-page not found</h3>
                <p className='pErr'>something went wrong</p>
                <nav>
-                 <Link to='contacts'>Go Home Page</Link>
+                 <Link className='errbutn' to='/'>Go Home Page</Link>
                </nav>
             </div>
         </div>
