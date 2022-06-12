@@ -55,7 +55,7 @@ const Pagination = props => {
 		
         // Render our Page Pills
         return (
-        <li  className={classnames('pagination-item', {
+        <li key={Math.random()}  className={classnames('pagination-item', {
               selected: pageNumber === currentPage
             })}
             onClick={() => onPageChange(pageNumber)}

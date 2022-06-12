@@ -57,6 +57,32 @@
                 margin-bottom: 30px;
                 color: #333333;
             }
+            .errbutn{
+                z-index: 1;
+            font-weight: 600;
+            overflow: hidden;
+            padding: 15px 35px;
+            text-align: center;
+            position: relative;
+            border-radius: 50px;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            font-size: 14px;
+            text-transform: uppercase;
+            background: linear-gradient(to bottom right, #ffbe30 , #ff3e00);
+            color: #ffffff ;
+            -webkit-box-shadow: 0 5px 60px 5px #00000033;
+            box-shadow: 0 5px 60px 5px #00000033;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 10px;
+                  
+            &:hover{
+                background: linear-gradient(to bottom right, #ff3e00 , #ffbe30)
+            }
+            }
          }
     }
 }

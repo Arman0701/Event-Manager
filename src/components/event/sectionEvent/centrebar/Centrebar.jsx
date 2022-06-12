@@ -4,6 +4,7 @@ import { FaMicrophone, FaThList, FaTicketAlt } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import { MdTableChart } from "react-icons/md";
 import useFetch from "./../../../../hooks/useFetch";
+import { Link } from "react-router-dom";
 
 const Centrebar = () => {
   const { data, loading, error } = useFetch("http://localhost:5500/api/films");
@@ -78,7 +79,10 @@ const Centrebar = () => {
                       <small>Max Seats</small>
                       <h3>{data.seats} Seats</h3>
                     </div>
-                    <button className="btnSpeaker">TICKETS & DETAILS</button>
+                    <nav>
+                    <Link to='eventDetails' className="btnSpeaker">TICKETS & DETAILS</Link>
+                    </nav>
+                   
                   </div>
                 </div>
               </div>
