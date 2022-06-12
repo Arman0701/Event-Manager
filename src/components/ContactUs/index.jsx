@@ -7,7 +7,7 @@ const ContactUs = () => {
     const [customerContact, setCustomerContact] = useState(
         { name:'',email: '', phonNumber:'',country:'',message:''}
     );
-    const [submitted, setSubmitted] = useState(false);
+  
 
     const handleChange = (event) => {
         setCustomerContact({...customerContact, [event.target.name]: event.target.value})
@@ -19,21 +19,14 @@ const ContactUs = () => {
       axios.post('http://localhost:5500/api/contact', customerContact)
         .then(function (response) {
             console.log(response)
-            setSubmitted(true);
+           
         })
         .catch(function (error) {
             console.log(error)
         }) 
        
        ;
-       if (submitted) {
-        return (
-          <>
-            <div className="text-2xl">Thank you!</div>
-            <div className="text-md"> We'll be in touch soon.</div>
-          </>
-        );
-      }
+    
         }
           return (
             <div className='contact'>
