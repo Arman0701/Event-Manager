@@ -1,9 +1,14 @@
+import React from "react";
 import "./centrebar.scss";
 import { FaMicrophone, FaThList, FaTicketAlt } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
 import { MdTableChart } from "react-icons/md";
-import React from "react";
+import useFetch from "./../../../../hooks/useFetch";
 
 const Centrebar = () => {
+  const { data, loading, error } = useFetch("http://localhost:5500/api/films");
+
+  console.log(data);
   return (
     <div className="centreBar">
       <div className="centreHeader">
@@ -37,178 +42,48 @@ const Centrebar = () => {
         </div>
       </div>
 
-      <div className="centreEvents">
-        <div className="centreEv">
-          <div className="centreEventImg">
-            <div className="cornerItem">
-              <span className="numMonth">26</span>
-              <small className="month">June</small>
-            </div>
-            <hr />
-            <img
-              src="https://jthemes.net/themes/html/harmony-event/assets/images/event/event-1.jpg"
-              alt=""
-            />
-          </div>
-          <div className="centreEventInfo">
-            <h2 className="title">Barcelona Food Truck Festival 2018</h2>
-            <small className="price">Tickets from $52</small>
-            <p className="desc">
-              Lorem ipsum dollor site amet the best consectuer diam nerdistin
-              adipiscing elites sed diam nonummy nibh the ebest uismod delgas
-              tincidunt ut laoreet dolore magna...
-            </p>
+      {loading
+        ? "loading..."
+        : data.map((data) => (
+            <div className="centreEvents" key = {data._id}>
+              <div className="centreEv">
+                <div className="centreEventImg">
+                  <div className="cornerItem">
+                    <span className="numMonth">{data.date}</span>
+                    <small className="month">{data.month}</small>
+                  </div>
+                  <hr />
+                  <img src={data.post} alt="" />
+                </div>
+                <div className="centreEventInfo">
+                  <h2 className="titleFilm">{data.title}</h2>
+                  <small className="price">
+                    Tickets from ${data.priceFilm}
+                  </small>
+                  <p className="descP">{data.desc}</p>
 
-            <div className="speaker">
-              <div className="li">
-                <span>
-                  <FaMicrophone />
-                </span>
-                <small>Speaker</small>
-                <h3>John Doe</h3>
-              </div>
+                  <div className="speaker">
+                    <div className="li">
+                      <span>
+                        <MdLocationOn />
+                      </span>
+                      <small>Loacation</small>
+                      <h3>{data.location}</h3>
+                    </div>
 
-              <div className="li">
-                <span>
-                  <FaTicketAlt />
-                </span>
-                <small>Max Seats</small>
-                <h3>2,262 Seats</h3>
+                    <div className="li">
+                      <span>
+                        <FaTicketAlt />
+                      </span>
+                      <small>Max Seats</small>
+                      <h3>{data.seats} Seats</h3>
+                    </div>
+                    <button className="btnSpeaker">TICKETS & DETAILS</button>
+                  </div>
+                </div>
               </div>
-              <button className="btnSpeaker">TICKETS & DETAILS</button>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="centreEvents">
-        <div className="centreEv">
-          <div className="centreEventImg">
-            <div className="cornerItem">
-              <span className="numMonth">26</span>
-              <small className="month">June</small>
-            </div>
-            <hr />
-            <img
-              src="https://jthemes.net/themes/html/harmony-event/assets/images/event/event-2.jpg"
-              alt=""
-            />
-          </div>
-          <div className="centreEventInfo">
-            <h2 className="title">Barcelona Food Truck Festival 2018</h2>
-            <small className="price">Tickets from $52</small>
-            <p className="desc">
-              Lorem ipsum dollor site amet the best consectuer diam nerdistin
-              adipiscing elites sed diam nonummy nibh the ebest uismod delgas
-              tincidunt ut laoreet dolore magna...
-            </p>
-
-            <div className="speaker">
-              <div className="li">
-                <span>
-                  <FaMicrophone />
-                </span>
-                <small>Speaker</small>
-                <h3>John Doe</h3>
-              </div>
-
-              <div className="li">
-                <span>
-                  <FaTicketAlt />
-                </span>
-                <small>Max Seats</small>
-                <h3>2,262 Seats</h3>
-              </div>
-              <button className="btnSpeaker">TICKETS & DETAILS</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="centreEvents">
-        <div className="centreEv">
-          <div className="centreEventImg">
-            <div className="cornerItem">
-              <span className="numMonth">26</span>
-              <small className="month">June</small>
-            </div>
-            <hr />
-            <img
-              src="https://jthemes.net/themes/html/harmony-event/assets/images/event/event-3.jpg"
-              alt=""
-            />
-          </div>
-          <div className="centreEventInfo">
-            <h2 className="title">Barcelona Food Truck Festival 2018</h2>
-            <small className="price">Tickets from $52</small>
-            <p className="desc">
-              Lorem ipsum dollor site amet the best consectuer diam nerdistin
-              adipiscing elites sed diam nonummy nibh the ebest uismod delgas
-              tincidunt ut laoreet dolore magna...
-            </p>
-
-            <div className="speaker">
-              <div className="li">
-                <span>
-                  <FaMicrophone />
-                </span>
-                <small>Speaker</small>
-                <h3>John Doe</h3>
-              </div>
-
-              <div className="li">
-                <span>
-                  <FaTicketAlt />
-                </span>
-                <small>Max Seats</small>
-                <h3>2,262 Seats</h3>
-              </div>
-              <button className="btnSpeaker">TICKETS & DETAILS</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="centreEvents">
-        <div className="centreEv">
-          <div className="centreEventImg">
-            <div className="cornerItem">
-              <span className="numMonth">26</span>
-              <small className="month">June</small>
-            </div>
-            <hr />
-            <img
-              src="https://jthemes.net/themes/html/harmony-event/assets/images/event/event-5.jpg"
-              alt=""
-            />
-          </div>
-          <div className="centreEventInfo">
-            <h2 className="title">Barcelona Food Truck Festival 2018</h2>
-            <small className="price">Tickets from $52</small>
-            <p className="desc">
-              Lorem ipsum dollor site amet the best consectuer diam nerdistin
-              adipiscing elites sed diam nonummy nibh the ebest uismod delgas
-              tincidunt ut laoreet dolore magna...
-            </p>
-
-            <div className="speaker">
-              <div className="li">
-                <span>
-                  <FaMicrophone />
-                </span>
-                <small>Speaker</small>
-                <h3>John Doe</h3>
-              </div>
-
-              <div className="li">
-                <span>
-                  <FaTicketAlt />
-                </span>
-                <small>Max Seats</small>
-                <h3>2,262 Seats</h3>
-              </div>
-              <button className="btnSpeaker">TICKETS & DETAILS</button>
-            </div>
-          </div>
-        </div>
-      </div>
+          ))}
     </div>
   );
 };

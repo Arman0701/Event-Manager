@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Event from '../../components/event/Event';
 import Navbarelem from './../../components/navbarElements/Navbarelem';
-import "./events.scss"
-import Footer from "../../components/Footer/Footer"
+import "./events.scss";
+import Footer from "../../components/Footer/Footer";
 // import useFetch from './../../hooks/useFetch';
 
 const Events = () => {

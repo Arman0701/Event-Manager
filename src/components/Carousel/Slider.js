@@ -1,3 +1,4 @@
+import React from "react";
 import "./Slider.css";
 import { useState, useEffect, useCallback } from "react";
 import BtnSlider from "./BtnSlider";

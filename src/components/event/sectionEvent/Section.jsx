@@ -1,7 +1,7 @@
+import React from "react";
 import Centrebar from "./centrebar/Centrebar";
 import Leftbar from "./leftbar/Leftbar";
 import "./section.scss";
-import React from "react";
 
 const Section = () => {
   return (

@@ -1,8 +1,7 @@
 .centreBar {
   flex: 5.5;
-  height: 200vh;
+  height: 300vh;
   margin-left: 30px;
-  
 
   .centreHeader {
     display: flex;
@@ -11,7 +10,7 @@
     .centreSelect {
       span {
         font-weight: 700;
-        color: #878787;
+        color: rgb(135 135 135);
         font-size: 17px;
         margin: 0 15px;
         margin-top: -4px;
@@ -28,7 +27,7 @@
       }
       select {
         border: none;
-        background: #f7f7f7;
+        background: rgb(247, 247, 247);
         outline: none;
         margin-left: -13px;
       }
@@ -58,7 +57,7 @@
     margin: 20px 0;
 
     &:hover {
-      outline: 1px solid #ffbe30;
+      outline: 1px solid rgb(255 190 48);
     }
 
     .centreEv {
@@ -69,6 +68,13 @@
       .centreEventImg {
         position: relative;
         width: 250px;
+        height: 250px;
+
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+        }
 
         .cornerItem {
           position: absolute;
@@ -81,19 +87,19 @@
             linear,
             left top,
             right bottom,
-            from(#ff3e00),
-            to(#ffbe30)
+            from(rgb(255 62 0)),
+            to(rgb(255 190 48))
           );
           background: -webkit-linear-gradient(
             top left,
-            #ff3e00,
-            #ffbe30
+            rgb(255 62 0),
+            rgb(255 190 48)
           );
           // background: -o-linear-gradient(top left, #ff3e00, #ffbe30);
           background: linear-gradient(
             to bottom right,
-            #ff3e00,
-            #ffbe30
+            rgb(255 62 0),
+            rgb(255 190 48)
           );
 
           .numMonth {
@@ -104,14 +110,14 @@
 
           .month {
             font-size: 20px;
-            color: #ffffff;
+            color: rgb(255 255 255);
           }
         }
         hr {
           position: absolute;
           width: 7px;
           height: 54px;
-          background-color: #ffbe30;
+          background-color: rgb(255, 190, 48);
           right: -4px;
           top: 17px;
           border: none;
@@ -119,17 +125,18 @@
       }
       .centreEventInfo {
         margin: 0 30px;
+        text-align: left;
 
-        .price{
-          color: #ffbe30;
+        .price {
+          color: rgb(255 190 48);
         }
 
-        .desc{
+        .descP {
           margin-top: 10px;
           font-size: 15px;
+          line-height: 1;
           font-weight: 400;
         }
-
 
         .speaker {
           display: flex;
@@ -153,25 +160,24 @@
                 linear,
                 left top,
                 right bottom,
-                from(#ff3e00),
-                to(#ffbe30)
+                from(rgb(255 62 0)),
+                to(rgb(255 190 48))
               );
               background: -webkit-linear-gradient(
                 top left,
-                #ff3e00,
-                #ffbe30
+                rgb(255 62 0),
+                rgb(255 190 48)
               );
               // background: -o-linear-gradient(top left, #ff3e00, #ffbe30);
               background: linear-gradient(
                 to bottom right,
-                #ff3e00,
-                #ffbe30
+                rgb(255 62 0),
+                rgb(255 190 48)
               );
               color: white;
               transition: all 1s ease-in;
             }
           }
-          
 
           .li {
             width: 170px;
@@ -186,21 +192,21 @@
               height: 40px;
               line-height: 40px;
               text-align: center;
-              color: #ffffff;
+              color: rgb(255 255 255);
               border-radius: 100%;
-              background-color: #ffbe30;
+              background-color: rgb(255 190 48);
             }
 
             small {
               margin-left: 10px;
-              color: #a8a5a5;
+              color: rgb(168, 165, 165);
               font-size: 15px;
               font-weight: 700;
             }
 
             h3 {
               margin-left: 47px;
-              font-size: 20px;
+              font-size: 15px;
               font-weight: 800;
             }
           }
