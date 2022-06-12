@@ -28,7 +28,7 @@ const EventItem=({title,poster,description,date,location})=>  (
    </ul>
    </div>
    <nav>
-   <button className='Button'>Tickets & details</button>
+     <Link to='eventDetails' className='Button'>Tickets & details</Link>
    </nav>
  </div>
 </div>

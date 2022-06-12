@@ -1,5 +1,5 @@
-import "./eventSearch.scss";
 import React from "react";
+import "./eventSearch.scss";
 
 const EventSearch = () => {
   return (
