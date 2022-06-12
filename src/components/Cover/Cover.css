@@ -1,0 +1,42 @@
+.cover {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+}
+.title {
+	font-size: 38px;
+	margin-bottom: 15px;
+}
+.subTitle {
+	font-size: 68px;
+	margin-bottom: 15px;
+}
+.slogan {
+	letter-spacing: 3px;
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+.buttons {
+	width: min-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.button {
+	width: max-content;
+	margin: 0 15px;
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 15px;
+	border: 3px solid orangered;
+	padding: 12px 25px;
+	background: orangered;
+}
+.button:nth-child(2) {
+	background: transparent;
+}

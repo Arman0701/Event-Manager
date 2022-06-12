@@ -9,6 +9,7 @@ import {
 } from "../../store/cart/cartSlice";
 import EventTitle from "../EventTitle";
 import './style.scss'
+import GooglePay from "../GooglePay";
 
 const CartContainer = () => {
   const { totalAmount, items } = useSelector((state) => state.cart);
@@ -59,13 +60,14 @@ const CartContainer = () => {
           </h4>
         </div>
 
-        <button
+        {/* <button
           color="danger"
           onClick={() => dispatch(clearCart())}
           style={{ width: "140px", marginTop: "50px" }}
         >
           Clear Cart
-        </button>
+        </button> */}
+        <GooglePay/>
       </footer>
     </div>
   );

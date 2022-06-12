@@ -1,8 +1,7 @@
 .centreBar {
   flex: 5.5;
-  height: 200vh;
+  height: 300vh;
   margin-left: 30px;
-  
 
   .centreHeader {
     display: flex;
@@ -69,6 +68,13 @@
       .centreEventImg {
         position: relative;
         width: 250px;
+        height: 250px;
+
+        img {
+          width: inherit;
+          height: inherit;
+          object-fit: cover;
+        }
 
         .cornerItem {
           position: absolute;
@@ -119,17 +125,18 @@
       }
       .centreEventInfo {
         margin: 0 30px;
+        text-align: left;
 
-        .price{
+        .price {
           color: rgb(255 190 48);
         }
 
-        .desc{
+        .descP {
           margin-top: 10px;
           font-size: 15px;
+          line-height: 1;
           font-weight: 400;
         }
-
 
         .speaker {
           display: flex;
@@ -171,7 +178,6 @@
               transition: all 1s ease-in;
             }
           }
-          
 
           .li {
             width: 170px;
@@ -200,7 +206,7 @@
 
             h3 {
               margin-left: 47px;
-              font-size: 20px;
+              font-size: 15px;
               font-weight: 800;
             }
           }
