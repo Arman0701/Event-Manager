@@ -1,11 +1,14 @@
+import React from 'react';
 import style from './SignInPage.module.css';
 import logo from '../../assets/img/site-logo.png';
 import facebookLogo from '../../assets/img/fb-logo.svg';
 import { useState } from 'react';
 import { ValidateEmail, ValidatePassword } from '../../helpers/validate';
+import { useParams } from 'react-router-dom';
 
-export default function SignInPage() {
-	const [ isLogin, setIsLogin ] = useState(true);
+export default function SignInPage({}) {
+	const params = useParams()
+	const [ isLogin, setIsLogin ] = useState(false);
 	const [ registerFormData, setRegisterFormData ] = useState({
 		name: '',
 		surname: '',
@@ -45,7 +48,7 @@ export default function SignInPage() {
 				</div>
 				<div className={style.formPart}>
 					{
-						isLogin ? <>
+						isLogin? <>
 							<div className={style.formHeader}>
 								<p>Account Login</p>
 								<p>Login to our website, or <span>REGISTER</span></p>
