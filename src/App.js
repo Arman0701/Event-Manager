@@ -7,6 +7,8 @@ const Events=lazy(()=> import ("./pages/events/Events"));
 const Gallery=lazy(()=>import (  "./pages/gallery/Gallery"));
 const Home=lazy(()=>import("./pages/home/Home"));
 const Speaker=lazy(()=>import("./pages/speaker/Speaker"));
+const Error404=lazy(()=>import("./components/Error404"))
+const EventDetails=lazy(()=>import("./pages/eventDetails/EventDetail"))
 import "./App.css";
 import React from "react";
 import Loader from './assets/img/preloader.gif'
@@ -28,7 +30,9 @@ function App() {
             <Route path="gallery" element={<Gallery />} />
             <Route path="speaker" element={<Speaker />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="eventDetails" element={<EventDetails/>}/>
           </Route>
+          <Route path="*" element={<Error404/>}/>
         </Routes>
         </Suspense>
       </BrowserRouter>
