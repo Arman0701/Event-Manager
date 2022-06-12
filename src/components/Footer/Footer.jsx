@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import logo from "../../assets/img/logo.png";
+import { useNavigate } from "react-router-dom";
 import imagesquare1 from "../../assets/imagesquare1.png";
 import imagesquare2 from "../../assets/imagesquare2.png";
 import imagesquare3 from "../../assets/imagesquare3.png";
@@ -9,6 +10,10 @@ import imagesquare5 from "../../assets/imagesquare5.png";
 import imagesquare6 from "../../assets/imagesquare6.png";
 
 export default function Footer({marginTop}) {
+  const navigate = useNavigate("")
+  function navigation(path){
+    navigate(path)
+  }
   return (
     <div className={styles.footerWrapper} style={marginTop?{
       marginTop:marginTop
@@ -99,17 +104,17 @@ export default function Footer({marginTop}) {
           <h3>
             Usefull <strong>Links</strong>
           </h3>
-          <div className={styles.border}>
+          <div className={styles.border} onClick={()=>{navigation("/about")}}>
             <div className={styles.link1}>
               <div className={styles.icons}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path d="M512 256c0-141.4-114.6-256-256-256S0 114.6 0 256c0 141.4 114.6 256 256 256S512 397.4 512 256zM265.9 382.8C259.9 380.3 256 374.5 256 368v-64H160c-17.67 0-32-14.33-32-32v-32c0-17.67 14.33-32 32-32h96v-64c0-6.469 3.891-12.31 9.875-14.78c5.984-2.484 12.86-1.109 17.44 3.469l112 112c6.248 6.248 6.248 16.38 0 22.62l-112 112C278.7 383.9 271.9 385.3 265.9 382.8z" />
                 </svg>
               </div>
-              <a href="#!">About Harmoni</a>
+              <a href="#!" >About Harmoni</a>
             </div>
           </div>
-          <div className={styles.border}>
+          <div className={styles.border} onClick={()=>{navigation("/Contact")}}>
             <div className={styles.link1}>
               <div className={styles.icons}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -119,7 +124,7 @@ export default function Footer({marginTop}) {
               <a href="#!">Contact us</a>
             </div>
           </div>
-          <div className={styles.border}>
+          <div className={styles.border} onClick={()=>{navigation("/Sponsors")}}>
             <div className={styles.link1}>
               <div className={styles.icons}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -129,7 +134,7 @@ export default function Footer({marginTop}) {
               <a href="#!">Sponsors</a>
             </div>
           </div>
-          <div className={styles.border}>
+          <div className={styles.border} onClick={()=>{navigation("/Events")}}>
             <div className={styles.link1}>
               <div className={styles.icons}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -139,7 +144,7 @@ export default function Footer({marginTop}) {
               <a href="#!">Events</a>
             </div>
           </div>
-          <div className={styles.border}>
+          <div className={styles.border} onClick={()=>{navigation("/Disclaimer")}}>
             <div className={styles.link1}>
               <div className={styles.icons}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -149,7 +154,7 @@ export default function Footer({marginTop}) {
               <a href="#!">Disclaimer</a>
             </div>
           </div>
-          <div className={styles.border}>
+          <div className={styles.border} onClick={()=>{navigation("/Events")}}>
             <div className={styles.link1}>
               <div className={styles.icons}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -159,7 +164,7 @@ export default function Footer({marginTop}) {
               <a href="#!">Tickets</a>
             </div>
           </div>
-          <div className={[styles.border, styles.noBorder].join(" ")}>
+          <div className={[styles.border, styles.noBorder].join(" ")} onClick={()=>{navigation("/Venues")}}>
             <div className={styles.link1}>
               <div className={styles.icons}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -263,10 +268,10 @@ export default function Footer({marginTop}) {
         <p> Harmoni.com all right reserved </p>
         <p>Made by Inevitable team♥</p>
         <div>
-          <a href="#">Contact</a>
-          <a href="#">About us</a>
-          <a href="#">Site map</a>
-          <a href="#">Privacy policy</a>
+          <a href="#" onClick={()=>{navigation("/Contact")}}>Contact</a>
+          <a href="#" onClick={()=>{navigation("/about")}}>About us</a>
+          <a href="#" onClick={()=>{navigation("/map")}}>Site map</a>
+          <a href="#" onClick={()=>{navigation("/privacyPolicy")}}>Privacy policy</a>
         </div>
       </footer>
     </div>
