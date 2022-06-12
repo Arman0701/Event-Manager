@@ -187,4 +187,5 @@ label p {
   font-size: 550;
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
+  border: none;
 }
