@@ -31,7 +31,7 @@ export default function Profile() {
 			<div className={style.leftSide}>
 				<div className={style.userImageWrapper}>
 					<img src={userImage} alt="user iamge" />
-					<div className={style.optionalLayer}>
+					<div className={style.optionalLayer} >
 						<p>Change profile iamge</p>
 					</div>
 				</div>

@@ -46,7 +46,7 @@ const Centrebar = () => {
       {loading
         ? "loading..."
         : data.map((data) => (
-            <div className="centreEvents" key = {data._id}>
+            <div className="centreEvents" key={data._id}>
               <div className="centreEv">
                 <div className="centreEventImg">
                   <div className="cornerItem">
@@ -79,10 +79,10 @@ const Centrebar = () => {
                       <small>Max Seats</small>
                       <h3>{data.seats} Seats</h3>
                     </div>
-                    <nav>
-                    <Link to='eventDetails' className="btnSpeaker">TICKETS & DETAILS</Link>
-                    </nav>
-                   
+
+                    <Link to = "/eventDetails">
+                      <button className="btnSpeaker">TICKETS & DETAILS </button>
+                    </Link>
                   </div>
                 </div>
               </div>

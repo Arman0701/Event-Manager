@@ -11,6 +11,7 @@ import "./App.css";
 import React from "react";
 import Loader from "./assets/img/preloader.gif";
 import Profile from "./pages/Profile/Profile";
+import EventDetail from './pages/eventDetails/EventDetail';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               <Route path="gallery" element={<Gallery />} />
               <Route path="speaker" element={<Speaker />} />
               <Route path="contact" element={<Contact />} />
+              <Route  path="eventDetails" element={<EventDetail/>} />
             </Route>
           </Routes>
         </Suspense>
