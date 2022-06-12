@@ -9,12 +9,14 @@
   justify-content: center;
   background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(3px);
+  border-radius: 4px;
 }
 .pageWrapper {
   position: relative;
   width: 90%;
   height: 80%;
   display: flex;
+  border-radius: 3px;
 }
 .imageWrapper {
   height: 100%;
@@ -51,12 +53,13 @@
   color: orange;
 }
 .formPart {
-  width: 40%;
+  width: 70%;
   background: linear-gradient(
     143deg,
     rgba(255, 85, 0, 1) 48%,
     rgba(253, 216, 29, 1) 100%
   );
+  border-radius: 0 3px 3px 0;
 }
 .formHeader {
   margin: 55px auto;
