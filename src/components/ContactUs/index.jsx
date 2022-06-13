@@ -75,23 +75,23 @@ const ContactUs = () => {
                         <div className='contactContainer'>
           <div>
           <div className='itemInp'>
-          <input type="text" name="name" value={customerContact.name} onChange={handleChange} required  placeholder='name'/>
+          <input type="text" name="name" value={customerContact.name} onChange={handleChange} required  placeholder='Name'/>
           </div>
           <div className='itemInp'>
-          <input type="text" name="email" value={customerContact.email} onChange={handleChange} required placeholder='email'/>
+          <input type="text" name="email" value={customerContact.email} onChange={handleChange} required placeholder='Email'/>
           </div>
           </div>
          <div>
          <div className='itemInp'>
-         <input type="text" name="country" value={customerContact.country} onChange={handleChange} required placeholder='country'/>
+         <input type="text" name="country" value={customerContact.country} onChange={handleChange} required placeholder='Country'/>
           </div>
           <div className='itemInp'>
-          <input type="text" name="phonNumber" value={customerContact.phonNumber} onChange={handleChange} required placeholder='pone Number'/>
+          <input type="text" name="phonNumber" value={customerContact.phonNumber} onChange={handleChange} required placeholder='Phone Number'/>
           </div>
          </div>
       </div>
       <div className='txtContainer'>
-      <textarea type="text" name="message" value={customerContact.message} onChange={handleChange} required placeholder='message'/>
+      <textarea type="text" name="message" value={customerContact.message} onChange={handleChange} required placeholder='Message'/>
       <button className='contactBut' type="submit">Send mail</button>
       </div>
                 </form>
