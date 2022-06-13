@@ -1,44 +1,13 @@
 import "./rightbar.scss";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import React from "react";
+import EventAcardion from "../../../EventAcardion";
 
 const Rightbar = () => {
   return (
     <div className="rightbar">
-      <span className="titlepst">
-        Recent <small>Post</small>
-      </span>
       <div className="postsInfo">
-        <div className="infoItems">
-          <span>How to joinn this event?</span>
-          <span className="icon">
-            <AiOutlineArrowUp />
-          </span>
-        </div>
-        <div className="infoItems">
-          <span>How to joinn this event?</span>
-          <span className="icon">
-            <AiOutlineArrowUp />
-          </span>
-        </div>
-        <div className="infoItems">
-          <span>How to joinn this event?</span>
-          <span className="icon">
-            <AiOutlineArrowUp />
-          </span>
-        </div>
-        <div className="infoItems">
-          <span>How to joinn this event?</span>
-          <span className="icon">
-            <AiOutlineArrowUp />
-          </span>
-        </div>
-        <div className="infoItems">
-          <span>How to joinn this event?</span>
-          <span className="icon">
-            <AiOutlineArrowUp />
-          </span>
-        </div>
+        <EventAcardion/>
         <div className="conferenceItem">
           <div className="textItems">
             <span className="dte">26 DECEMBER 2018</span>
