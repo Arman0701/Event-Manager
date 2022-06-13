@@ -1,182 +1,194 @@
 .popupContent {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: rgba(0,0,0,0.45);
-	backdrop-filter: blur(3px);
+  width: 1161px;
+  margin-left: -810px;
+  margin-top: -33px;
+  height: 110vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(3px);
+  border-radius: 4px;
 }
 .pageWrapper {
-	position: relative;
-	width: 80%;
-	height: 80%;
-	display: flex;
+  position: relative;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  border-radius: 3px;
 }
 .imageWrapper {
-	height: 100%;
-	width: 60%;
-	background-image: url('./images/login-modal-bg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+  height: 100%;
+  width: 60%;
+  background-image: url("../../assets/img/login-modal-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bgLayer {
-	width: 100%;
-	height: 100%;
-	background: rgba(54, 51, 51, 0.8);
+  width: 100%;
+  height: 100%;
+  background: rgba(54, 51, 51, 0.8);
 }
 .logo {
-	padding: 100px 0;
-	margin: 0 auto;
-	width: 200px;
+  padding: 100px 0;
+  margin: 0 auto;
+  width: 200px;
 }
 .imageWrapperContent {
-	width: 150px;
-	margin: 0 auto;
-	margin-top: 35px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 35px;
 }
 .imageWrapperContent p {
-	text-align: center;
-	color: white;
-	font-size: 17px;
-	transition: 0.2s;
-	margin: 6px 0;
-	font-weight: 550;
-	cursor: context-menu;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  transition: 0.2s;
+  margin: 6px 0;
+  font-weight: 550;
+  cursor: context-menu;
 }
 .imageWrapperContent p:hover {
-	color: orange;
+  color: orange;
 }
 .formPart {
-	width: 40%;
-	background: linear-gradient(143deg, rgba(255,85,0,1) 48%, rgba(253,216,29,1) 100%);
+  width: 70%;
+  background: linear-gradient(
+    143deg,
+    rgba(255, 85, 0, 1) 48%,
+    rgba(253, 216, 29, 1) 100%
+  );
+  border-radius: 0 3px 3px 0;
 }
 .formHeader {
-	margin: 55px auto;
-	margin-bottom: 35px;
-	width: 80%;
-	text-align: center;
+  margin: 55px auto;
+  margin-bottom: 35px;
+  width: 80%;
+  text-align: center;
 }
 .formHeader p {
-	color: white;
-	font-size: 18px;
+  color: white;
+  font-size: 18px;
 }
 .formHeader p:nth-child(1) {
-	font-size: 25px;
-	margin-bottom: 15px;
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 .formHeader p:nth-child(2) span {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 .facebookLoginBtn {
-	display: flex;
-	align-items: center;
-	border-radius: 35px;
-	background: #4267B2;
-	width: 90%;
-	margin: 0 auto;
-	margin-bottom: 35px;
-	cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  background: #4267b2;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  cursor: pointer;
 }
 .logoWrapper {
-	width: 35px;
-	height: 35px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .buttonLeftSide {
-	padding: 8px 20px;
-	height: 100%;
-	border-right: 1px solid white;
-	width: 15%;
+  padding: 8px 20px;
+  height: 100%;
+  border-right: 1px solid white;
+  width: 15%;
 }
 .logoWrapper img {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .facebookLoginBtn p {
-	width: 85%;
-	text-align: center;
-	color: white;
+  width: 85%;
+  text-align: center;
+  color: white;
 }
 .line {
-	position: relative;
-	width: 90%;
-	height: 1px;
-	background: white;
-	margin: 0 auto;
+  position: relative;
+  width: 90%;
+  height: 1px;
+  background: white;
+  margin: 0 auto;
 }
 .line p {
-	color: white;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -55%);
-	padding: 5px 28px;
-	backdrop-filter: blur(100000px);
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  padding: 5px 28px;
+  backdrop-filter: blur(100000px);
 }
 .formWrapper {
-	width: 90%;
-	margin: 25px auto;
+  width: 90%;
+  margin: 25px auto;
 }
-.formWrapper input, .submitBtn {
-	width: 100%;
-	padding: 15px 20px;
-	border-radius: 35px;
-	margin: 10px 0;
-	outline: none;
-	border: none;
-	font-size: 17px;
+.formWrapper input,
+.submitBtn {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 35px;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  font-size: 17px;
 }
 .submitBtn {
-	background: #FFBE30;
-	text-align: center;
-	color: white;
-	font-weight: 550;
-	cursor: pointer;
+  background: #ffbe30;
+  text-align: center;
+  color: white;
+  font-weight: 550;
+  cursor: pointer;
 }
 .registerFormWrapper {
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 100px;
-	text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
 }
 .registerFormWrapper > p {
-	color: white;
-	font-size: 29px;
-	margin: 15px 0;
+  color: white;
+  font-size: 29px;
+  margin: 15px 0;
 }
 .registerFormWrapper input {
-	width: 100%;
-	font-size: 18px;
-	margin: 5px 0;
-	padding: 3px 15px;
-	border-radius: 15px;
-	outline: none;
-	border: none;
+  width: 100%;
+  font-size: 18px;
+  margin: 5px 0;
+  padding: 3px 15px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
 }
 .registerForm {
-	padding: 15px 25px;
-	border-radius: 10px;
-	background: rgba(255,255,255,0.2);
-	backdrop-filter: blur(5px);
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
 }
 label {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 label p {
-	color: white;
-	text-align-last: left;
+  color: white;
+  text-align-last: left;
 }
 .registerSubmitButton {
-	width: fit-content;
-	padding: 10px 25px;
-	border-radius: 18px;
-	margin: 15px auto;
-	margin-bottom: 0;
-	color: white;
-	font-size: 550;
-	background: rgba(255,255,255,0.3);
-	cursor: pointer;
+  width: fit-content;
+  padding: 10px 25px;
+  border-radius: 18px;
+  margin: 15px auto;
+  margin-bottom: 0;
+  color: white;
+  font-size: 550;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  border: none;
 }

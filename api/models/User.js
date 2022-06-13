@@ -7,6 +7,11 @@ const UserSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
+   surname: {
+      type: String,
+      required: true,
+      unique: true,
+    },
     email: {
       type: String,
       required: true,
@@ -14,14 +19,14 @@ const UserSchema = new mongoose.Schema(
     },
     country: {
       type: String,
-      required: true,
+      
     },
     img: {
       type: String,
     },
     city: {
       type: String,
-      required: true,
+    
     },
     phone: {
       type: String,
