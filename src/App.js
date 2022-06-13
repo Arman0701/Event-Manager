@@ -7,6 +7,7 @@ const Events = lazy(() => import("./pages/events/Events"));
 const Gallery = lazy(() => import("./pages/gallery/Gallery"));
 const Home = lazy(() => import("./pages/home/Home"));
 const Speaker = lazy(() => import("./pages/speaker/Speaker"));
+const Error404=lazy(()=>import("./components/Error404"))
 import "./App.css";
 import React from "react";
 import Loader from "./assets/img/preloader.gif";
@@ -36,6 +37,7 @@ function App() {
               <Route path="contact" element={<Contact />} />
               <Route  path="eventDetails" element={<EventDetail/>} />
             </Route>
+            <Route path="*" element={<Error404/>}/>
           </Routes>
         </Suspense>
       </BrowserRouter>
